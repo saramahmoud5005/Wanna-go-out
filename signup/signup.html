@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="description" content="signup">
+    <link rel="stylesheet" href="signup.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    
+    
+		<div class="container">
+			<div class="outer">
+                
+                 <div name ="navigation_bar" class="navigation_bar">
+    <ul class="nav-links">    
+          <li><a href="file:///C:/Users/Owner/Desktop/Describe/Describe.html">Description</a></li>
+          <li id="PD"><a href="file:///C:/Users/Owner/Desktop/Program%20Designers/program%20designers.html">Designers</a></li>
+          <li><a href="file:///C:/Users/Owner/Desktop/signup/signup.html">Sign Up</a></li>
+          <li class="logout"><a href="file:///C:/Users/Owner/Desktop/login/login.HTML">Log In</a></li>
+    </ul>
+
+</div>
+                
+                <div class="box">
+        
+    <h2>Create Account </h2>
+        
+        <form id="form" name="register" >
+            
+            <div class="inputBox">
+                <input type="text" name="firstname" required="" id="fname" onkeydown="checkfname()">
+                <label>First Name</label>
+                <span id="fn"></span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="lastname" required="" id="lname" onkeydown="checklname()">
+                <label>Last Name</label>
+                <span id="ln"></span>
+            </div>
+            <div class="inputBox">
+                <input id="email" type="text" name="email" required="" onkeydown="checkEmail()">
+                
+                <label>E-mail</label>
+                <span id="text"></span>
+            </div>
+            <div class="inputBox" >
+                <input class="password" type="password" name="pass" name="password" required="" id = "pass">
+                <label>Password</label>
+            </div>
+            <div class="inputBox" >
+                <input class="confirmpassword" type="password" name="cpass" required="" id  = "cpass">
+                <label>Confirm Password</label>
+            </div>
+            <button class="button" type="submit"  onclick="checkpassword()"  >Submit </button>
+            
+         </form>
+        </div>
+    
+       <script>  
+                function checkfname()
+                {
+                    var firstname=document.getElementById('fname').value,
+                        first=document.getElementById('fn');
+
+                    for(i=0;i<firstname;i++)
+                        {
+                            ch=firstname.charAt(i);
+                            if(!(ch>='a'&&ch<='z')&&!(ch>='A'&&ch<='Z'))
+                                {
+                                   first .innerHTML=" Invalid Name ";
+                                     first.style.color="#ff0000";
+                                    return false;
+                        }
+                    }
+              first .innerHTML="";
+                return true;
+                }
+
+            function checklname()
+            {
+                var lastname=document.getElementById('lname').value,
+                    last= document.getElementById('ln');
+
+                for(i=0;i<lastname;i++)
+                    {
+                        ch=lastname.charAt(i);
+                        if(!(ch>='a'&&ch<='z')&&!(ch>='A'&&ch<='Z'))
+                            {
+                              last.innerHTML=" Invalid Name ";
+                                last.style.color="#ff0000";
+                                return false;
+                            }
+                    }
+               
+                last.innerHTML="";
+                return true;
+             }
+    
+            function checkEmail()
+            {
+                var form= document.getElementById("form");
+                var email= document.getElementById("email").value;
+                var text=document.getElementById("text");
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+                if(email.match(pattern))
+                {
+                    form.classList.add("valid");
+                    form.classList.remove("invalid");
+                    text.innerHTML="Your Email Address in Valid";
+                    text.style.color="#00ff00";
+
+                }
+                else
+                {
+                    form.classList.add("invalid");
+                    form.classList.remove("valid");
+                    text.innerHTML="Please Enter Vaild Email Address";
+                    text.style.color="#ff0000";
+                }
+                if(email == "")
+                    {
+                        form.classList.remove("valid");
+                        form.classList.remove("invalid");
+                        text.innerHTML="";
+                        text.style.color="#00ff00";
+                    }
+                else
+                {
+                    form.classList.remove("valid");
+                    form.classList.remove("invalid");
+                }  
+             }
+
+           function checkpassword()
+                {
+                    var password=document.getElementById('pass').value,
+                    confirmPassword=document.getElementById('cpass').value;
+
+                    if(password!=confirmPassword)
+                        {
+                            alert("password didn't match try again.");
+                            return false;
+                        }
+                    else if(password==confirmPassword)
+                        {
+                            
+                            if(password!='')
+                                {
+                                     
+                                    setTimeout(function(){window.location.href="file:///C:/Users/Owner/Desktop/Home/home.html"},0);
+                                    
+                                }
+                        }
+                     return true;
+            }
+            </script>
+    
+		</div>
+    </div>
+                
+	</body>
+</html>

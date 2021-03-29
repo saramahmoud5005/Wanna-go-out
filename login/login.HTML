@@ -1,0 +1,84 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="description" content="login">
+        <link rel="stylesheet" href="login.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="outer">
+                <nav class="menu">
+                     <ul>
+                      <li><a href="#">Home</a></li>     
+                      <li><a href="file:///C:/Users/Owner/Desktop/Describe/Describe.html">Description</a></li>
+                      <li id="PD"><a href="file:///C:/Users/Owner/Desktop/Program%20Designers/program%20designers.html"> Designers</a></li>
+                      <li><a href="file:///C:/Users/Owner/Desktop/signup/signup.html">Sign Up</a></li>
+                      <li><div>Wanna go out?</div></li>
+                     </ul>
+
+                </nav>
+				<div class="box">
+        
+                    <h2>Login</h2>
+
+                    <form>
+
+                        <div class="inputBox">
+                         <input type="" name="" required="" id="username">
+                         <label>E-mail / Username</label>
+                        </div>
+            
+                        <div class="inputBox" >
+                            <input  type="password" name="" required="" id="password">
+                            <label>Password</label> 
+                        </div>
+
+                      <button class="button" type="submit" onclick="checkUsername()"> Login</button>
+                        
+                        <script>
+        
+        function checkUsername()
+        {
+            var userN=document.getElementById('username').value,
+                passW=document.getElementById('password').value,
+                checkName=["ayaMohamed","lailaGaber","saraMahmoud","emanMohamed","amiraYasser","arwaAlaa","admin"],
+                checkPass=123456789;
+            var i;
+            var ch=false;
+            
+            for( i=0;i<checkName.length;i++)
+                {
+                    /*check if user admin or not*/
+                    if((userN==checkName[i])&&(passW==checkPass))
+                        {
+                           ch= true ;
+                            break;
+                        }
+                }
+                if(ch==true)
+                   {
+                       /*go to admin page */
+                        setTimeout(function(){window.location.href="file:///C:/Users/Owner/Desktop/admin%20page/admin_page.html"},0);
+                   }
+                else if(passW!='')
+                    {
+                          
+                        setTimeout(function(){window.location.href="file:///C:/Users/Owner/Desktop/Home/home.html"},0);
+                    }
+        }
+    </script>
+                
+            <div class="down">
+                <br>
+                 <a href="file:///C:/Users/Owner/Desktop/forget%20password/forget%20password.html">Forget your password? </a><br>
+            </div>
+        </form>
+    </div>
+
+   
+			     </div>
+		</div>
+    </div>
+                
+	</body>
+</html>

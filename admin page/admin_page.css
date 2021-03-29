@@ -1,0 +1,154 @@
+body
+{
+    background-color: rgb(43, 42, 42);
+}
+
+div.navigation_bar
+{
+	font:bold 20px white Arial ,Times new roman white;
+	height:25px;
+	padding-bottom:17px;
+	background-color:black;
+	text-align:center;
+	
+}
+
+
+ ul
+{
+	list-style:none;
+	padding:0;
+	margin:0;
+    background: rgba(0,0,0,0.8);
+}
+ul li
+{
+
+	display:inline-block;
+	padding:10px;
+	transition:all 0.3s ease 0s;
+     background: rgba(0,0,0,0.8);
+    
+	
+}
+ul li a
+{
+	text-decoration:none;
+	color:white;
+	margin:10px;
+}
+a:active
+{
+	color:orange;
+}
+
+h1
+{
+    width: 340px;
+     transform: translate(-50%,-50%);
+    padding: 5px ;
+    background: rgba(0,0,0,0.8) ;
+     border-radius: 15px ;
+}
+ 
+
+
+
+h1
+{
+   color: white;
+   margin: 10px 300px 50px 570px;
+}
+
+.slider
+{
+	width :920px;
+	height:450px;
+	background:url(web1.jpeg);
+	
+	animation:slide 20s infinite;
+    left: 10%;
+}
+@keyframes slide
+{ 
+  0%
+    {
+        background:url(web1.jpeg);
+    }
+  10%
+    {
+        background:url(web2.jpeg);
+    }
+  20%
+    {
+        background:url(web3.jpeg);
+    }
+  30%
+    {
+        background:url(web4.jpeg);
+    }
+  40%
+    {
+        background:url(web5.jpeg);
+    }
+  50%
+    {
+        background:url(web6.jpeg);
+    }
+  60%
+    {
+        background:url(web7.jpeg);
+    }
+  70%
+    {
+        background:url(web8.jpeg);
+    }
+  80%
+    {
+        background:url(web9.jpeg);
+    }
+  90%
+    {
+        background:url(web10.jpeg);
+    }
+  100%
+    {
+        background:url(2.jpeg);
+    }
+ 
+
+}
+	
+
+.field3
+{
+    width: 350px ;
+    height: 490px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+   padding: 40px ;
+    background: rgba(0,0,0,.8) ;
+    box-sizing: border-box;
+   
+    border-radius: 10px ;
+}
+.inp
+{
+    width: 110px;
+    height: 50px;
+    text-align: center;
+  
+}
+
+.clear
+{
+    clear: both;
+}
+
+
+
+
+

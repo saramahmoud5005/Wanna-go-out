@@ -1,0 +1,111 @@
+body
+{
+	background-color: BlanchedAlmond;
+}
+
+div.navigation_bar
+{
+	font:bold 20px white Arial ,Times new roman white;
+	height:25px;
+	padding-bottom:17px;
+	background-color:black;
+	text-align:center;
+	
+}
+
+
+ ul
+{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+ul li
+{
+
+	display:inline-block;
+	padding:10px;
+	transition:all 0.3s ease 0s;
+	
+}
+ul li a
+{
+	text-decoration:none;
+	color:white;
+	margin:10px;
+}
+
+a:active
+{
+	color:orange;
+}
+
+#img_title
+{
+	width: 1500px; 
+	height: 550px;
+    border: hidden ;
+	filter: sepia(50%);
+	margin-bottom: 150px;
+}
+
+
+#div_title
+{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+
+#text_title
+ {
+	
+    position: absolute;
+    top: 35%;
+    left:480px;
+     right: 5%;
+    transform: translate(-30%, -45%);
+    font-size: 120px;
+	font-weight: bold;
+	font-style: italic;
+	color: 	black;
+ }
+
+#description 
+{
+    font-size: 20px;
+	font-weight: bold;
+   text-align: center;
+   
+}
+.Border
+
+{
+
+	border: hidden ;
+	float: left;
+}
+
+.fieldset_placesphoto
+{
+	background-color: oldlace;
+	
+	margin: 0px 10px 0px 110px;
+	width : 270px;
+}
+
+
+.img_placephoto
+{
+	 width: 250px;	
+	 height: 250px;
+	 padding: 18px;
+	 
+}
+
+p
+{
+	font-size: 18px;
+
+}
